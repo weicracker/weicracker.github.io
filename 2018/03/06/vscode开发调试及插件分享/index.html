@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="专注前端技术分享">
+<meta name="description" content="简介Visual Studio Code是一个轻量级但是十分强大的源代码编辑器，重要的是它在Windows, OS X 和Linux操作系统的桌面上均可运行。Visual Studio Code内置了对JavaScript, TypeScript和Node.js语言的支持，并且为其他语言如C++, C#, Python, PHP等提供了丰富的扩展库和运行时。 下载地址https://code.vi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vscode开发调试及插件分享">
 <meta property="og:url" content="http://yoursite.com/2018/03/06/vscode开发调试及插件分享/index.html">
 <meta property="og:site_name" content="纪威的个人博客">
-<meta property="og:description" content="专注前端技术分享">
+<meta property="og:description" content="简介Visual Studio Code是一个轻量级但是十分强大的源代码编辑器，重要的是它在Windows, OS X 和Linux操作系统的桌面上均可运行。Visual Studio Code内置了对JavaScript, TypeScript和Node.js语言的支持，并且为其他语言如C++, C#, Python, PHP等提供了丰富的扩展库和运行时。 下载地址https://code.vi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T02:27:01.339Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/c3100e5aly1fpticbes6oj207e0rpta3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/c3100e5aly1fptidkq9cyj20730rfq4a.jpg">
+<meta property="og:updated_time" content="2018-03-29T03:10:37.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vscode开发调试及插件分享">
-<meta name="twitter:description" content="专注前端技术分享">
+<meta name="twitter:description" content="简介Visual Studio Code是一个轻量级但是十分强大的源代码编辑器，重要的是它在Windows, OS X 和Linux操作系统的桌面上均可运行。Visual Studio Code内置了对JavaScript, TypeScript和Node.js语言的支持，并且为其他语言如C++, C#, Python, PHP等提供了丰富的扩展库和运行时。 下载地址https://code.vi">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/c3100e5aly1fpticbes6oj207e0rpta3.jpg">
 
 
 
@@ -329,7 +332,11 @@
       
 
       
-        
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><pre><code>Visual Studio Code是一个轻量级但是十分强大的源代码编辑器，重要的是它在Windows, OS X 和Linux操作系统的桌面上均可运行。Visual Studio Code内置了对JavaScript, TypeScript和Node.js语言的支持，并且为其他语言如C++, C#, Python, PHP等提供了丰富的扩展库和运行时。
+</code></pre><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a></p>
+<h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><p><img src="http://ww1.sinaimg.cn/large/c3100e5aly1fpticbes6oj207e0rpta3.jpg" alt="插件1"><br><img src="http://ww1.sinaimg.cn/large/c3100e5aly1fptidkq9cyj20730rfq4a.jpg" alt="插件2"></p>
+<h2 id="常用工作区配置"><a href="#常用工作区配置" class="headerlink" title="常用工作区配置"></a>常用工作区配置</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">// 将设置放入此文件中以覆盖默认值和用户设置。</span><br><span class="line">&#123;</span><br><span class="line">  //忽略部分显示文件</span><br><span class="line">  "files.exclude": &#123;</span><br><span class="line">    "**/.git": true,</span><br><span class="line">    "**/.svn": true,</span><br><span class="line">    "**/.hg": true,</span><br><span class="line">    "**/.DS_Store": true,</span><br><span class="line">    "node_modules": true,</span><br><span class="line">    "json": true,</span><br><span class="line">    ".idea": true,</span><br><span class="line">    "test": true,</span><br><span class="line">    "*.txt": true</span><br><span class="line">  &#125;,</span><br><span class="line">  // 配置 glob 模式以在搜索中排除文件和文件夹。从 files.exclude 设置中继承所有 glob 模式。</span><br><span class="line">  "search.exclude": &#123;</span><br><span class="line">      "**/node_modules": true,</span><br><span class="line">      "**/dist": true,</span><br><span class="line">  &#125;,</span><br><span class="line">  // tab长度</span><br><span class="line">  "editor.tabSize": 2,</span><br><span class="line">  // 启用后，将在保存文件时剪裁尾随空格。</span><br><span class="line">  "files.trimTrailingWhitespace": true,</span><br><span class="line">  //匹配常见的angular模式</span><br><span class="line">  "vsicons.presets.angular": true,</span><br><span class="line">  //支持右侧缩略图</span><br><span class="line">  "editor.minimap.enabled": true,</span><br><span class="line">  //支持选中后拖拽移动文本</span><br><span class="line">  "editor.dragAndDrop": true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="调试技巧"><a href="#调试技巧" class="headerlink" title="调试技巧"></a>调试技巧</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">注释：launch.json</span><br><span class="line">&#123;</span><br><span class="line">        <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</span><br><span class="line">        <span class="attr">"configurations"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"type"</span>: <span class="string">"node"</span>,</span><br><span class="line">                <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">                <span class="attr">"runtimeExecutable"</span>:<span class="string">"xxxxx.exe"</span>,</span><br><span class="line">                <span class="attr">"name"</span>: <span class="string">"Launch taskApp"</span>,</span><br><span class="line">                <span class="attr">"stopOnEntry"</span>: <span class="literal">false</span>,</span><br><span class="line">                <span class="attr">"outFiles"</span>: [ <span class="string">"$&#123;workspaceRoot&#125;/dist/**/*.js"</span> ],</span><br><span class="line">                <span class="attr">"args"</span>: [<span class="string">""</span>],</span><br><span class="line">                <span class="attr">"env"</span>: &#123;</span><br><span class="line">                    <span class="attr">"NODE_PATH"</span>:<span class="string">""</span>,</span><br><span class="line">                    <span class="attr">"dev"</span>:<span class="string">""</span></span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">"protocol"</span>: <span class="string">"inspector"</span>,</span><br><span class="line">                <span class="attr">"trace"</span>: <span class="literal">true</span>,</span><br><span class="line">                <span class="attr">"console"</span>: <span class="string">"externalTerminal"</span>,</span><br><span class="line">                <span class="attr">"internalConsoleOptions"</span>: <span class="string">"openOnSessionStart"</span></span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -441,8 +448,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -472,7 +488,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -540,6 +556,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载地址"><span class="nav-number">2.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用插件"><span class="nav-number">3.</span> <span class="nav-text">常用插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用工作区配置"><span class="nav-number">4.</span> <span class="nav-text">常用工作区配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调试技巧"><span class="nav-number">5.</span> <span class="nav-text">调试技巧</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
